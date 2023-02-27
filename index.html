@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top" id="navbar-example2">
         <div class="container-fluid">
             <a href="#" class="navbar-brand"><img src="xocali.png" width="100px" height="60px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -16,20 +16,23 @@
             </button>
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Xocalı</a></li>
-                    <li class="nav-item"><a href="#melumat" class="nav-link">Məlumat</a></li>
+                    <li class="nav-item"><a href="#carouselExampleIndicators" class="nav-link">Xocalı</a></li>
+                    <li class="nav-item"><a href="#melumat" class="nav-link">Haqqında</a></li>
                     <li class="nav-item"><a href="#card" class="nav-link">Şəkillər</a></li>
+                    <li class="nav-item"><a href="#accordionPanelsStayOpenExample" class="nav-link">Məlumat</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide" style="margin: 50px 0;">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <div id="carouselExampleIndicators" class="carousel slide" style="margin: 50px 0;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="photo3.jpeg" class="d-block w-100">
@@ -41,59 +44,146 @@
             <img src="photo2.jpeg" class="d-block w-100">
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-    </div>
+      </div>
 
-    <div class="container-fluid" style="margin-bottom: 50px;" id="melumat">
+      <div class="container-fluid" style="margin-bottom: 50px;" id="melumat">
         Xocalı soyqırımı — 1992-ci il fevralın 25-dən 26-na keçən gecə ermənistan Silahlı Qüvvələri tərəfindən Rusiyanın 366-cı motoatıcı alayının iştirakı ilə Xocalı şəhərini işğal edərkən, etnik azərbaycanlılara qarşı baş vermiş soyqırımdır. Xocalı Ermənistan dəstələri tərəfindən zəbt olunduqdan sonra orada qalan mülki əhali deportasiya olundu. Bu əməllər mütəşəkkil formada həyata keçirildi. Deportasiya olunan əhalinin əksəriyyəti Xankəndidə saxlanıldı və bu barədə qondarma Dağlıq Qarabağ Respublikası (DQR) hakimiyyətinin müvafiq əmri olduğunun aşkar göstəricisidir. Xocalıda dinc əhalinin, o cümlədən qadınların girov kimi tutulması və saxlanılması "DQR" hakimiyyətinin Xocalının bütün dinc insanlarını əvəzsiz olaraq Azərbaycan tərəfinə qaytarmağa hazır olması ilə bağlı bəyanatları ilə aşkarca ziddiyyət təşkil edir. Girovların saxlanma şəraiti kəskin dərəcədə qeyri-qənaətbəxş olmuş, Xocalının saxlanılan sakinlərinə qarşı zorakılıq tətbiq edilmişdir. Xocalı sakinləri qanunsuz olaraq mülkiyyətlərindən məhrum edildi, onların əmlakı Xankəndidə və ətraf məntəqələrdə məskunlaşan şəxslər tərəfindən mənimsənildi. "DQR" hakimiyyəti həmçinin şəhərdən çıxan və ya deportasiya olunan Xocalı sakinlərinə məxsus evləri zəbt etmək üzrə ordenlər verməklə başqa şəxslərə məxsus bu cür əmlakın mənimsənilməsini leqallaşdırdılar. Xocalıya hücumda Müstəqil Dövlətlər Birliyinin ordusuna məxsus olan 366-cı motoatıcı alayın hərbçiləri iştirak etmişdir.
-    </div>
+      </div>
 
-    <div class="d-flex flex-wrap" id="card" style="margin-bottom: 80px;">
+      <div class="d-flex flex-wrap" id="card" style="margin-bottom: 80px;">
         <div class="card mx-auto my-2" style="width: 18rem;">
-            <img src="card1.jpeg" class="card-img-top" alt="..." height="200px">
-            <div class="card-body">
-              <h5 class="card-title">Xocalı faciəsi</h5>
-              <p class="card-text">Xocalı soyqırımı nəticəsində 63-ü uşaq, 106-sı qadın, 70-i qoca və qarı olmaqla, 613 Xocalı sakini qətlə yetirilib.</p>
-              <a href="#" class="btn btn-dark">Daha çox</a>
-            </div>
+          <img src="card1.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Xocalı faciəsi</h5>
+            <p class="card-text">Xocalı soyqırımı nəticəsində 63-ü uşaq, 106-sı qadın, 70-i qoca və qarı olmaqla, 613 Xocalı sakini qətlə yetirilib.</p>
+            <a href="#" class="btn btn-dark">Daha çox</a>
+          </div>
         </div>
 
         <div class="card mx-auto my-2" style="width: 18rem; margin-bottom: 80px;">
-            <img src="card2.jpeg" class="card-img-top" alt="..." height="200px">
-            <div class="card-body">
-              <h5 class="card-title">Xocalı faciəsi</h5>
-              <p class="card-text">8 ailə tamamilə məhv edilib, 25 uşaq hər iki valideynini, 130 uşaq valideynlərindən birini itirib.</p>
-              <a href="#" class="btn btn-dark">Daha çox</a>
-            </div>
+          <img src="card2.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Xocalı faciəsi</h5>
+            <p class="card-text">8 ailə tamamilə məhv edilib, 25 uşaq hər iki valideynini, 130 uşaq valideynlərindən birini itirib.</p>
+            <a href="#" class="btn btn-dark">Daha çox</a>
+          </div>
         </div>
 
         <div class="card mx-auto my-2" style="width: 18rem; margin-bottom: 80px;">
-            <img src="card3.jpeg" class="card-img-top" alt="..." height="200px">
-            <div class="card-body">
-              <h5 class="card-title">Xocalı faciəsi</h5>
-              <p class="card-text">Düşmən gülləsindən 76-sı uşaq olmaqla, 487 nəfər yaralanıb. 1275 nəfər əsir götürülüb.</p>
-              <a href="#" class="btn btn-dark">Daha çox</a>
-            </div>
+          <img src="card3.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Xocalı faciəsi</h5>
+            <p class="card-text">Düşmən gülləsindən 76-sı uşaq olmaqla, 487 nəfər yaralanıb. 1275 nəfər əsir götürülüb.</p>
+            <a href="#" class="btn btn-dark">Daha çox</a>
+          </div>
         </div>
 
         <div class="card mx-auto my-2" style="width: 18rem; margin-bottom: 80px;">
-            <img src="card4.jpeg" class="card-img-top" alt="..." height="200px">
-            <div class="card-body">
-              <h5 class="card-title">Xocalı faciəsi</h5>
-              <p class="card-text">Əsir götürülənlərdən 150 nəfərinin, o cümlədən 68 qadın və 26 uşağın taleyi bu günədək məlum deyil.</p>
-              <a href="#" class="btn btn-dark">Daha çox</a>
-            </div>
+          <img src="card4.jpeg" class="card-img-top" alt="..." height="200px">
+          <div class="card-body">
+            <h5 class="card-title">Xocalı faciəsi</h5>
+            <p class="card-text">Əsir götürülənlərdən 150 nəfərinin, o cümlədən 68 qadın və 26 uşağın taleyi bu günədək məlum deyil.</p>
+            <a href="#" class="btn btn-dark">Daha çox</a>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-bottom: 120px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Soyqırım haqqında şərh
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Azərbaycan xalqının XX əsrdə üzləşdiyi dəhşətli faciələrdən biri də Xocalı soyqırımıdır. Xocalı faciəsi Xatın, Lidisa, Oradur soyqırımı kimi insanlıq tarixinə düşmüş qanlı olaydır. Xocalı 1991-cı ilin oktyabrından blokadada idi. Oktyabrın 30-da avtomobil əlaqəsi kəsilmiş və yeganə nəqliyyat vasitəsi vertolyot qalmışdı. Xocalıya sonuncu vertolyot 1992-ci il yanvarın 28-də gəlmişdi. Şuşa şəhərinin səmasında mülki vertolyotun vurulması və nəticədə 40 nəfərin həlakından sonra isə bu əlaqə də kəsilmişdi. Yanvarın 2-dən şəhərə elektrik verilmirdi.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Erməni işğalı nəticəsində dağıdılmış abidələr
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Kərkicahan qəsəbəsi, Kosalar, Cəmilli və Meşəli kəndlərindəki qəbiristanlıqlar; Dini abidələrdən Meşəlidəki "Seyid qəbri"; Xocalı Məbəd Yeri (50 hektar sahədə 100 məbədi əhatə edir); XIV əsrə aid olan Xocalı Məqbərəsi.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Milli Qəhrəmanlar
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Əlif Lətif oğlu Hacıyev; Tofiq Mirsiyab oğlu Hüseynov; Ələsgər Xanlar oğlu Novruzov; Füzuli Salah oğlu Rüstəmov; Araz Bahadur oğlu Səlimov; Tabil Qasım oğlu Həsənov; İnqilab Ələkbər oğlu İsmayılov; Şakir Şamil oğlu Salahov; Natiq İlyas oğlu Əhmədov;
+              Mövsüm Şahin oğlu Məmmədov.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionPanelsStayOpenExample" ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              
+            </div>
+          </div>
+        </div>
+      </div> -->
     
-    <div class="footer d-flex fixed-bottom bg-dark text-white" style="height: 60px; justify-content: center; align-items: center;">Designed by Murad &copy; 2023</div>
+      <div class="footer d-flex fixed-bottom bg-dark text-white" style="height: 60px; justify-content: center; align-items: center;">
+        Designed by Murad &copy; 2023
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
